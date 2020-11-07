@@ -19,7 +19,8 @@ public:
     */
 
     // konstruktor kopiujący
-    ResourceManager(const ResourceManager& manager) : managedResource(manager.managedResource){};
+    ResourceManager(const ResourceManager& manager)
+        : managedResource(*new Resource = manager.managedResource){};
 
     // konstruktor przenoszący
     ResourceManager(ResourceManager&& manager) : managedResource(manager.managedResource) {}
