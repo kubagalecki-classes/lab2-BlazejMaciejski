@@ -26,7 +26,6 @@ public:
 
     ~ResourceManager()
     {
-        delete &managedResource;
         //.freeResources();
     }
 
