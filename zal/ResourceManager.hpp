@@ -31,7 +31,11 @@ public:
     }
 
     // Kopiujący operator przypisania
-    ResourceManager& operator=(const ResourceManager& t) { managedResource = t.managedResource; };
+    ResourceManager& operator=(const ResourceManager& t)
+    {
+        managedResource = t.managedResource;
+        return (*this);
+    };
     // Przenoszący operator przypisania
     ResourceManager& operator=(ResourceManager&&);
 
