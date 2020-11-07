@@ -5,7 +5,7 @@
 class ResourceManager
 {
 private:
-    Resource managedResource;
+    Resource& managedResource;
 
 public:
     ResourceManager() : managedResource(*new Resource) {}
