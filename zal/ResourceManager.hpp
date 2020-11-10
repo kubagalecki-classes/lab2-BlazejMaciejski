@@ -6,7 +6,7 @@ class ResourceManager
 {
 private:
     Resource* managedResource;
-
+    //test test
 public:
     ResourceManager() : managedResource(new Resource) {}
 
